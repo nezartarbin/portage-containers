@@ -1,0 +1,11 @@
+FROM oxa/containers/nodejs
+
+# yarn
+RUN bash -c "corepack enable && \
+  corepack prepare yarn@stable --activate"
+
+# typescript
+RUN bash -c "npm install --global --omit dev typescript"
+
+CMD ["bash"]
+

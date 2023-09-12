@@ -1,0 +1,7 @@
+FROM oxa/containers/ebuild-dev
+
+RUN bash -c "emerge --sync oxa && \
+  emerge --jobs 10 net-libs/nodejs-bin::oxa"
+
+CMD ["bash"]
+

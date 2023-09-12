@@ -1,0 +1,7 @@
+FROM gentoo/stage3:amd64-musl
+
+COPY ./assets/gentoo-mirror.conf ./setup-gentoo.sh /tmp/
+
+RUN bash /tmp/setup-gentoo.sh
+
+CMD ["bash"]

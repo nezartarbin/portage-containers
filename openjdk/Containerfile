@@ -1,0 +1,7 @@
+FROM gentoo
+
+COPY ./setup-openjdk.bash /tmp/
+
+RUN bash /tmp/setup-openjdk.bash
+
+CMD ["bash"]

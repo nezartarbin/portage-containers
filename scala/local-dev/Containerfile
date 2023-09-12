@@ -1,0 +1,7 @@
+FROM openjdk
+
+COPY ./setup-scala.bash /tmp/
+
+RUN bash /tmp/setup-scala.bash
+
+CMD ["bash"]

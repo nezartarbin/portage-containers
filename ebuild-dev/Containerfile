@@ -1,0 +1,7 @@
+FROM oxa/containers/gentoo
+
+COPY ./assets /tmp/assets
+
+RUN bash /tmp/assets/setup.bash
+
+CMD ["bash"]
